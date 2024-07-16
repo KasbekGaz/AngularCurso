@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 
 export class ContadorComponent{
+    numero: number =1; 
+    decrementar_texto: string= "<-";
+    incrementar_texto: string= "->";
 
+    decrementar(){
+        if (this.numero > 0)
+            this.numero--;
+    }
+
+    incrementar(){
+        if(this.numero<99)
+            this.numero++;
+    }
 }
